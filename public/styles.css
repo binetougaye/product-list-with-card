@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(20, 50%, 98%);
+}
+h1 {
+    color: maroon;
+}
+.cart {
+    height: 250px;
+}
+.cart p {
+    color: hsl(12, 20%, 44%);
+}
+.cart h5 {
+    color: hsl(14, 86%, 42%);
+}
+.empty-cart {
+    width: 150px;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.price {
+    color: hsl(14, 86%, 42%);
+}
+.name {
+    color: hsl(12, 20%, 44%);
+    font-weight: bold;
+}
+.category {
+    color: hsl(14, 25%, 72%);
+}
+.cart {
+    width: 30px;
+}
+
+img {
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container .rounded {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.cart-button {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre pour le bouton */
+    transition: all 0.3s ease;
+}
+
+.cart-button img {
+    width: 16px;
+    height: 16px;
+}
+
+.image-container:hover .rounded {
+    transform: scale(1.1);
+}
